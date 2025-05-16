@@ -146,7 +146,9 @@ function ToDoApp() {
             Completed Tasks: {completedCount} / {tasks.length}
           </p>
           <button onClick={clearTasks} className="clear-button">Clear All Tasks</button>
-          <button onClick={completeAllTasks} className="clear-button">Complete All Tasks</button>
+          {tasks.some(task => !task.completed) && (
+              <button onClick={completeAllTasks} className="clear-button">Complete All Tasks</button>
+          )}
 
           
             <div className="filter-buttons">
