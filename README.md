@@ -1,12 +1,44 @@
-# React + Vite
+# 📝 React Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple yet powerful Todo App built using **React**, **Vite**, and **JSX**. This app helps users manage tasks efficiently with a variety of intuitive features and persistent local storage.
 
-Currently, two official plugins are available:
+🟢 **Live Demo**: [https://todo-app-fidha.netlify.app/](https://todo-app-fidha.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ➕ **Add Tasks** – Quickly add tasks to your list.
+- ✏️ **Edit Tasks** – Update task names on the fly.
+- ❌ **Delete Tasks** – Remove tasks individually.
+- ✅ **Mark Complete/Incomplete** – Toggle task status.
+- 🔼🔽 **Reorder Tasks** – Move tasks up or down the list.
+- 🗂️ **Filter Tasks** – View tasks by:
+  - All
+  - Completed
+  - Pending
+- 📌 **Auto-sort** – Completed tasks move to the bottom automatically.
+- 🔄 **Complete All Tasks** – Mark all tasks as complete in one click.
+- 🧹 **Clear All Tasks** – Remove all tasks at once.
+- 🔢 **Task Counter** – Displays how many tasks are completed.
+- 🛡️ **Validation**:
+  - Prevents **duplicate** tasks.
+  - Prevents use of **special characters**.
+  - Displays meaningful error messages.
+- 💾 **Persistent Storage** – Tasks are saved in **localStorage** and stay intact even after refreshing or closing the browser. Only manual deletion clears them.
+
+---
+
+## 🛠️ Tech Stack
+
+- **React**
+- **Vite**
+- **JSX**
+- **CSS / SCSS (optional)**
+- **LocalStorage** (for persistent data)
+
+---
+
+## 🙌 Acknowledgments
+
+Created as part of React learning and practice during **Brocamp React Week**
