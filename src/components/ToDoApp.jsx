@@ -38,9 +38,9 @@ function ToDoApp() {
     e.preventDefault();
     const trimmedTask = newTask.trim();
     if (trimmedTask === '') return;
-    let haveSymbols = /[^a-zA-Z,\s]/
+    let haveSymbols = /[^a-zA-Z,\s]/.test(newTask)
     if(haveSymbols) {
-      setErrorMessage('Task doesn\'t include symbols');
+      setErrorMessage('Task include symbols');
       inputRef.current.focus();
       return;
     }
