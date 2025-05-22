@@ -38,6 +38,12 @@ function ToDoApp() {
     e.preventDefault();
     const trimmedTask = newTask.trim();
     if (trimmedTask === '') return;
+    let haveSymbols = /[^a-zA-Z,\s]/
+    if(haveSymbols) {
+      setErrorMessage('Task doesn\'t include symbols');
+      inputRef.current.focus();
+      return;
+    }
 
     const isDuplicate = tasks.some(
       (task) => task.text.toLowerCase() === trimmedTask.toLowerCase() && task.id !== editId
