@@ -107,7 +107,8 @@ function ToDoApp() {
     if (filter === 'completed') return task.completed;
     if (filter === 'pending') return !task.completed;
     return true;
-  });
+  })
+  .sort((a, b) => a.completed - b.completed);
 
   function clearTasks() {
     const confirmed = window.confirm("Are you sure you want to clear all tasks?");
